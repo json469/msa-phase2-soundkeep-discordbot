@@ -11,10 +11,20 @@ bot.on('ready', function(event) {
 });
 
 bot.on('message', function(user, userID, channelID, message, event) {
-    if (message === "ping") {
-        bot.sendMessage({
-            to: channelID,
-            message: "pong"
-        });
-    }
+
+    switch(message) {
+
+        case '!ping':
+            bot.sendMessage({
+                to: channelID,
+                message: "pong"
+            });
+            break;
+        case '!pong':
+            bot.sendMessage({
+                to: channelID,
+                message: "ping"
+            });        
+            break;
+        }
 });

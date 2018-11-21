@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/205336e4-b484-4793-867c-d0acc1857b31/resourceGroups/msa-phase2/providers/Microsoft.Web/sites/soundkeep-bot",
+    "appService.deploySubpath": ""
+}
